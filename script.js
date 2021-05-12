@@ -1,13 +1,14 @@
-// This declares all the variables and gives a value to the variable 'pi'
+// This declares all the variables
 let diameter = 0
 let radius = 0
 let area = 0
 let circumference = 0
-let pi = 3.14159265359
+// This gives a value to pi so I don't need to write the number each time
+const pi = 3.14159265359
 // This makes the button start the calculate function
 document.getElementById('start').addEventListener('click', calculate)
 
-function calculate() {
+function calculate () {
   // This sets the value of the diameter variable to the the number that the user gives
   diameter = document.getElementById('user-input').value
   if (diameter >= 0) {
